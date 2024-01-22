@@ -6,10 +6,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({type: 'mysql',
+    TypeOrmModule.forRoot({type: 'postgres',
       host: 'localhost',
-      port: 3306,
-      username: 'root',
+      port: 5432,
+      username: 'hms',
       password: 'root',
       database: 'hms',
       synchronize: true,
